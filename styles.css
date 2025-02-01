@@ -65,6 +65,7 @@ header nav ul li a:hover {
 
 /* General styling for header */
 /* General styling for header */
+/* General styling for header */
 header {
     background-color: #333;
     color: white;
@@ -75,6 +76,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .header-content h1 {
@@ -82,11 +84,19 @@ header {
     font-size: 24px;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .navbar ul {
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 100%;
+    justify-content: flex-end; /* Align the menu items to the right */
 }
 
 .navbar ul li {
@@ -110,10 +120,17 @@ header {
     display: none;
     cursor: pointer;
     font-size: 30px;
+    order: 1; /* Make sure burger is on the right */
 }
 
 /* Responsive styling */
 @media screen and (max-width: 768px) {
+    /* Change layout for mobile */
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     /* Hide the navbar links on small screens */
     .navbar ul {
         display: none;
@@ -131,6 +148,7 @@ header {
     /* Display burger icon */
     .burger-menu {
         display: block;
+        margin-left: auto; /* Align burger icon to the right */
     }
 
     /* Show the navbar links when burger menu is clicked */
