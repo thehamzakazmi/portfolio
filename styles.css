@@ -271,7 +271,7 @@ header nav ul li a:hover {
 }
 
 .certificate-card {
-    background: #34495e; /* Dark blue-gray */
+    background: linear-gradient(135deg, #2c2c54, #6c5ce7); /* Dark blue-gray */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
