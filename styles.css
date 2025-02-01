@@ -21,7 +21,7 @@ body {
     left: 0;
     width: 100%;
     background-color: #2c2c54; /* Dark purple */
-    color: white;
+    /* color: white;
     padding: 15px 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -63,6 +63,7 @@ header nav ul li a:hover {
     color: #6c5ce7; /* Light purple */
 /* } */
 
+/* General styling for header */
 /* General styling for header */
 header {
     background-color: #333;
@@ -119,10 +120,12 @@ header {
         flex-direction: column;
         position: absolute;
         top: 60px;
-        right: 20px;
+        left: 0;
+        right: 0;
         background-color: #333;
-        width: 200px;
+        width: 100%;
         padding: 10px;
+        text-align: center;
     }
 
     /* Display burger icon */
