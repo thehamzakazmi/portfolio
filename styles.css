@@ -958,3 +958,186 @@ footer a:hover {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--primary);
 }
+
+/* ===== CERTIFICATES PAGE SPECIFIC ===== */
+#certificates-hero {
+    background: var(--gradient-dark);
+    color: white;
+    padding: 160px 0 80px;
+    text-align: center;
+    position: relative;
+}
+
+.certificate-img-container {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.certificate-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Changed from cover to contain to show full certificate */
+    padding: 20px;
+    background: white;
+    transition: var(--transition);
+}
+
+.certificate-card:hover .certificate-img-container img {
+    transform: scale(1.03);
+}
+
+.certificate-card-content {
+    padding: 30px;
+}
+
+.cert-date {
+    color: var(--primary);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cert-skills {
+    color: var(--gray);
+    font-size: 0.95rem;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.certificate-note {
+    background: rgba(67, 97, 238, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    border-left: 4px solid var(--primary);
+}
+
+.certificate-note p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    color: var(--light);
+}
+
+.certificate-note i {
+    color: var(--primary);
+}
+
+/* ===== PROJECTS PAGE SPECIFIC ===== */
+#projects-hero {
+    background: var(--gradient-dark);
+    color: white;
+    padding: 160px 0 80px;
+    text-align: center;
+    position: relative;
+}
+
+.project-img-container {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.project-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.project-card:hover .project-img-container img {
+    transform: scale(1.05);
+}
+
+.project-date {
+    color: var(--primary);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.project-tech {
+    color: var(--gray);
+    font-size: 0.95rem;
+    margin: 20px 0;
+    padding: 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: rgba(67, 97, 238, 0.1);
+    color: var(--primary);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    border: 1px solid rgba(67, 97, 238, 0.3);
+}
+
+.project-link:hover {
+    background: rgba(67, 97, 238, 0.2);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-sm);
+}
+
+.project-categories {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.project-categories h3 {
+    color: var(--light);
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.category-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.category-tag {
+    padding: 12px 25px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--light);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.category-tag:hover {
+    background: var(--gradient-primary);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-sm);
+    border-color: transparent;
+}
