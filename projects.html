@@ -17,7 +17,8 @@
                 <nav>
                     <ul>
                         <li><a href="index.html"><i class="fas fa-home"></i> <span>Home</span></a></li>
-                        <li><a href="projects.html"><i class="fas fa-project-diagram"></i> <span>Projects</span></a></li>
+                        <li><a href="projects.html" class="active"><i class="fas fa-project-diagram"></i> <span>Code Projects</span></a></li>
+                        <li><a href="design.html"><i class="fas fa-paint-brush"></i> <span>Design Portfolio</span></a></li>
                         <li><a href="certificates.html"><i class="fas fa-award"></i> <span>Certificates</span></a></li>
                     </ul>
                 </nav>
@@ -25,90 +26,155 @@
         </div>
     </header>
 
+    <!-- Projects Hero Section -->
+    <section id="projects-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Code & Development Projects</h2>
+                <p>A collection of programming projects showcasing skills in game development, web applications, and system design.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects">
         <div class="container">
-            <h2>Projects</h2>
+            <div class="section-title">
+                <h2>Technical Projects Portfolio</h2>
+                <p>From game development to web applications, explore my hands-on programming work.</p>
+            </div>
+
             <div class="project-grid">
                 <!-- Project 1: Tetris Game -->
                 <div class="project-card">
-                    <img src="images/tetris.jpeg" alt="Tetris Game">
-                    <h3>Tetris Game in C++</h3>
-                    <p>Developed a classic Tetris game using C++ and SFML library.</p>
-                    <p><strong>Technologies:</strong> C++, SFML</p>
-                    <a href="#" class="btn">View Project</a>
+                    <div class="project-img-container">
+                        <img src="images/tetris.jpeg" alt="Tetris Game" 
+                             onerror="this.src='https://via.placeholder.com/400x300/4361ee/ffffff?text=Tetris+Game'">
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Tetris Game in C++</h3>
+                        <p class="project-date"><i class="far fa-calendar-alt"></i> Semester Project</p>
+                        <p>Developed a classic Tetris game using C++ and SFML library with complete game mechanics, scoring system, and responsive controls.</p>
+                        <p class="project-tech"><strong>Technologies:</strong> C++, SFML, Game Development</p>
+                        <div class="project-links">
+                            <a href="https://github.com/thehamzakazmi/tetris-game" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                            <!-- <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a> -->
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Project 2: Voting System -->
+                <!-- Project 2: Medical Research Website -->
                 <div class="project-card">
-                    <img src="images/vs.jpeg" alt="Voting System">
-                    <h3>Voting System in Digital Logic Design</h3>
-                    <p>Designed and implemented a digital voting system using logic gates and circuits.</p>
-                    <p><strong>Technologies:</strong> Digital Logic Design, Verilog</p>
-                    <a href="#" class="btn">View Project</a>
+                    <div class="project-img-container">
+                        <img src="images/medprime-website.jpg" alt="Medical Research Website" 
+                             onerror="this.src='https://via.placeholder.com/400x300/7209b7/ffffff?text=Medical+Website'">
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Medical Research Website</h3>
+                        <p class="project-date"><i class="far fa-calendar-alt"></i> Client Project</p>
+                        <p>Developed a fully functional and responsive website for a medical research institute using modern web technologies.</p>
+                        <p class="project-tech"><strong>Technologies:</strong> HTML, CSS, JavaScript, React, Node.js</p>
+                        <div class="project-links">
+                            <a href="https://medprimepk.com" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Website
+                            </a>
+                            <a href="https://github.com/thehamzakazmi/medical-website" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Project 3: Pac-Man Game -->
+                <!-- Project 3: AI Racing Controller -->
                 <div class="project-card">
-                    <img src="images/pacman.jpeg" alt="Pac-Man Game">
-                    <h3>Pac-Man Game in Assembly Language</h3>
-                    <p>Created a Pac-Man game using Assembly Language and Irvine32 library.</p>
-                    <p><strong>Technologies:</strong> Assembly Language, Irvine32</p>
-                    <a href="#" class="btn">View Project</a>
+                    <div class="project-img-container">
+                        <img src="https://via.placeholder.com/400x300/f72585/ffffff?text=AI+Racing+Controller" 
+                             alt="AI Racing Controller">
+                    </div>
+                    <div class="project-card-content">
+                        <h3>AI Racing Controller using TORCS</h3>
+                        <p class="project-date"><i class="far fa-calendar-alt"></i> AI Project</p>
+                        <p>Developed a Python-based autonomous racing controller using reinforcement learning techniques with real-time telemetry processing from 20+ car sensors.</p>
+                        <p class="project-tech"><strong>Technologies:</strong> Python, Reinforcement Learning, TORCS Framework</p>
+                        <div class="project-links">
+                            <a href="https://github.com/thehamzakazmi/ai-racing-controller" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Project 4: Zumba Game -->
+                <!-- Project 4: Smart Traffic System -->
                 <div class="project-card">
-                    <img src="images/zumba.jpeg" alt="Zumba Game">
-                    <h3>Zumba Game in Assembly Language</h3>
-                    <p>Developed a Zumba-inspired game using Assembly Language and Irvine32 library.</p>
-                    <p><strong>Technologies:</strong> Assembly Language, Irvine32</p>
-                    <a href="#" class="btn">View Project</a>
+                    <div class="project-img-container">
+                        <img src="images/traffic-system.jpg" alt="Smart Traffic System" 
+                             onerror="this.src='https://via.placeholder.com/400x300/4361ee/ffffff?text=Traffic+System'">
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Smart Traffic System Simulation</h3>
+                        <p class="project-date"><i class="far fa-calendar-alt"></i> OS Project</p>
+                        <p>Simulated a smart traffic system using C language and SFML, implementing key concepts of operating systems including process scheduling and synchronization.</p>
+                        <p class="project-tech"><strong>Technologies:</strong> C, SFML, Operating Systems Concepts</p>
+                        <div class="project-links">
+                            <a href="https://github.com/thehamzakazmi/traffic-system" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Project 5: Dodge Em Game -->
+                <!-- Project 5: ShopVerse Database -->
                 <div class="project-card">
-                    <img src="images/dodge-em.jpg" alt="Dodge Em Game">
-                    <h3>Dodge Em Game in C++</h3>
-                    <p>Created a Dodge Em game using Object-Oriented Programming (OOP) in C++ and SFML.</p>
-                    <p><strong>Technologies:</strong> C++, OOP, SFML</p>
-                    <a href="#" class="btn">View Project</a>
+                    <div class="project-img-container">
+                        <img src="images/shopverse.jpg" alt="ShopVerse Database" 
+                             onerror="this.src='https://via.placeholder.com/400x300/7209b7/ffffff?text=Database+System'">
+                    </div>
+                    <div class="project-card-content">
+                        <h3>ShopVerse – Online Marketplace Database</h3>
+                        <p class="project-date"><i class="far fa-calendar-alt"></i> Database Project</p>
+                        <p>Designed and implemented an online marketplace database system using SQL and C, with normalized tables, complex queries, and transaction management.</p>
+                        <p class="project-tech"><strong>Technologies:</strong> SQL, Database Design, C Programming</p>
+                        <div class="project-links">
+                            <a href="https://github.com/thehamzakazmi/shopverse-database" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Project 6: Superstore Website -->
+                <!-- Project 6: Assembly Language Games -->
                 <div class="project-card">
-                    <img src="images/superstore.jpg" alt="Superstore Website">
-                    <h3>Superstore Online Shopping Website</h3>
-                    <p>Developed a fully functional website for an online superstore using HTML and CSS.</p>
-                    <p><strong>Technologies:</strong> HTML, CSS</p>
-                    <a href="#" class="btn">View Project</a>
+                    <div class="project-img-container">
+                        <img src="images/pacman.jpeg" alt="Assembly Games" 
+                             onerror="this.src='https://via.placeholder.com/400x300/f72585/ffffff?text=Assembly+Games'">
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Assembly Language Games Collection</h3>
+                        <p class="project-date"><i class="far fa-calendar-alt"></i> Low-Level Programming</p>
+                        <p>Developed multiple games including Pac-Man and a Zumba-inspired game using x86 Assembly Language with Irvine32 graphics library, demonstrating low-level programming proficiency.</p>
+                        <p class="project-tech"><strong>Technologies:</strong> x86 Assembly, Irvine32 Library</p>
+                        <div class="project-links">
+                            <a href="https://github.com/thehamzakazmi/assembly-games" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-                <!-- Project 7: Smart Traffic System -->
-                <div class="project-card">
-                    <img src="images/traffic-system.jpg" alt="Smart Traffic System">
-                    <h3>Smart Traffic System Simulation</h3>
-                    <p>Simulated a smart traffic system using C and SFML as part of an Operating System project.</p>
-                    <p><strong>Technologies:</strong> C, SFML</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-
-                <!-- Project 8: Console Chess Game -->
-                <div class="project-card">
-                    <img src="images/chess.jpg" alt="Console Chess Game">
-                    <h3>Console-Based Chess Game in C++</h3>
-                    <p>Developed a console-based chess game in C++ with full game logic and rules.</p>
-                    <p><strong>Technologies:</strong> C++</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-
-                <!-- Project 9: ShopVerse Database -->
-                <div class="project-card">
-                    <img src="images/shopverse.jpg" alt="ShopVerse Database">
-                    <h3>ShopVerse – Online Marketplace Database</h3>
-                    <p>Designed and implemented an online marketplace database system using SQL.</p>
-                    <p><strong>Technologies:</strong> SQL, Database Design</p>
-                    <a href="#" class="btn">View Project</a>
+            <!-- Project Categories Navigation -->
+            <div class="project-categories">
+                <h3>Browse by Category</h3>
+                <div class="category-tags">
+                    <a href="#game-dev" class="category-tag">Game Development</a>
+                    <a href="#web-dev" class="category-tag">Web Development</a>
+                    <a href="#ai-ml" class="category-tag">AI & Machine Learning</a>
+                    <a href="#systems" class="category-tag">Systems Programming</a>
+                    <a href="#database" class="category-tag">Database Systems</a>
                 </div>
             </div>
         </div>
@@ -117,7 +183,12 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Muhammad Hamza. All rights reserved.</p>
+            <p>&copy; 2024 Muhammad Hamza. All rights reserved. | 
+               <a href="index.html">Home</a> | 
+               <a href="projects.html">Projects</a> | 
+               <a href="design.html">Design</a> | 
+               <a href="certificates.html">Certificates</a>
+            </p>
         </div>
     </footer>
 </body>
