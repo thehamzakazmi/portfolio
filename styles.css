@@ -1141,3 +1141,253 @@ footer a:hover {
     box-shadow: var(--shadow-sm);
     border-color: transparent;
 }
+
+/* ===== MOBILE RESPONSIVE FIXES ===== */
+
+/* For tablets and smaller screens */
+@media (max-width: 992px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    header h1 {
+        font-size: 22px;
+    }
+    
+    header nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    
+    header nav ul li a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+/* For mobile phones (portrait) */
+@media (max-width: 768px) {
+    /* Header fixes */
+    header {
+        padding: 12px 0;
+    }
+    
+    header h1 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    
+    header nav ul {
+        gap: 8px;
+        justify-content: center;
+    }
+    
+    header nav ul li a {
+        padding: 6px 10px;
+        font-size: 13px;
+        border-radius: 20px;
+    }
+    
+    /* Hide navigation text on very small screens */
+    header nav ul li a span {
+        display: none;
+    }
+    
+    header nav ul li a i {
+        font-size: 16px;
+        margin: 0;
+    }
+    
+    /* Hero section fixes */
+    #hero {
+        padding: 140px 0 80px;
+    }
+    
+    .profile-img {
+        width: 140px;
+        height: 140px;
+    }
+    
+    #hero h2 {
+        font-size: 1.8rem;
+        padding: 0 10px;
+        line-height: 1.3;
+    }
+    
+    #hero p {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .btn {
+        width: 90%;
+        max-width: 280px;
+        padding: 14px 20px;
+        justify-content: center;
+    }
+    
+    /* Section spacing */
+    section {
+        padding: 60px 0;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+        padding: 0 15px;
+    }
+}
+
+/* For very small phones */
+@media (max-width: 480px) {
+    /* Header hamburger menu option (if needed) */
+    /* Uncomment if you want hamburger menu:
+    .mobile-menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--dark);
+        padding: 20px;
+        box-shadow: var(--shadow-lg);
+    }
+    
+    header nav ul.active {
+        display: flex;
+    }
+    */
+    
+    /* Simpler: Keep navigation icons only */
+    header nav ul {
+        gap: 5px;
+    }
+    
+    header nav ul li a {
+        padding: 8px;
+        min-width: 40px;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Hero adjustments */
+    #hero {
+        padding: 120px 0 60px;
+    }
+    
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    #hero h2 {
+        font-size: 1.5rem;
+    }
+    
+    #hero p {
+        font-size: 0.95rem;
+    }
+    
+    /* Grid items */
+    .skills-grid,
+    .preview-grid,
+    .future-grid,
+    .design-grid,
+    .project-grid,
+    .certificate-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Card content padding */
+    .skill-category,
+    .preview-item,
+    .design-content,
+    .project-card-content,
+    .certificate-card-content {
+        padding: 20px;
+    }
+    
+    /* Footer */
+    footer p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    footer a {
+        margin: 0 5px;
+        font-size: 0.9rem;
+    }
+}
+
+/* For landscape orientation on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    #hero {
+        padding: 100px 0 60px;
+    }
+    
+    .hero-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        text-align: left;
+    }
+    
+    .profile-img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 0;
+    }
+    
+    .hero-text {
+        flex: 1;
+    }
+    
+    #hero h2 {
+        font-size: 1.6rem;
+        padding: 0;
+    }
+    
+    #hero p {
+        font-size: 0.95rem;
+        padding: 0;
+    }
+}
+
+/* Fix for iPhone notch/safe areas */
+@supports (padding: max(0px)) {
+    header, section, footer {
+        padding-left: max(15px, env(safe-area-inset-left));
+        padding-right: max(15px, env(safe-area-inset-right));
+    }
+    
+    #hero {
+        padding-top: max(140px, calc(140px + env(safe-area-inset-top)));
+    }
+}
+
+/* Prevent horizontal scrolling */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
