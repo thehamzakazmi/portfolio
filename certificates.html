@@ -17,32 +17,83 @@
                 <nav>
                     <ul>
                         <li><a href="index.html"><i class="fas fa-home"></i> <span>Home</span></a></li>
-                        <li><a href="projects.html"><i class="fas fa-project-diagram"></i> <span>Projects</span></a></li>
-                        <li><a href="certificates.html"><i class="fas fa-award"></i> <span>Certificates</span></a></li>
+                        <li><a href="projects.html"><i class="fas fa-project-diagram"></i> <span>Code Projects</span></a></li>
+                        <li><a href="design.html"><i class="fas fa-paint-brush"></i> <span>Design Portfolio</span></a></li>
+                        <li><a href="certificates.html" class="active"><i class="fas fa-award"></i> <span>Certificates</span></a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
+    <!-- Certificates Hero Section -->
+    <section id="certificates-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Certifications & Achievements</h2>
+                <p>Formal recognition of skills and knowledge acquired through coursework, workshops, and professional training.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Certificates Section -->
     <section id="certificates">
         <div class="container">
-            <h2>Certificates</h2>
+            <div class="section-title">
+                <h2>Academic & Professional Certificates</h2>
+                <p>Documented achievements that validate technical and creative competencies.</p>
+            </div>
+
             <div class="certificate-grid">
                 <!-- Internship Certificate -->
                 <div class="certificate-card">
-                    <img src="images/internship.jpg" alt="Internship Certificate">
-                    <h3>Web Programming Internship</h3>
-                    <p>Completed a summer internship at a software house, where I learned web programming and gained hands-on experience in HTML, CSS, and JavaScript.</p>
+                    <div class="certificate-img-container">
+                        <!-- Replace with your actual certificate image or placeholder -->
+                        <img src="images/certificate-internship.jpg" alt="Web Programming Internship Certificate" 
+                             onerror="this.src='https://via.placeholder.com/400x300/4361ee/ffffff?text=Internship+Certificate'">
+                    </div>
+                    <div class="certificate-card-content">
+                        <h3>Web Programming Internship</h3>
+                        <p class="cert-date"><i class="far fa-calendar-alt"></i> Summer 2023</p>
+                        <p>Completed a summer internship at a software house, where I learned web programming and gained hands-on experience in HTML, CSS, and JavaScript.</p>
+                        <p class="cert-skills"><strong>Skills Developed:</strong> Frontend Development, Responsive Design, JavaScript Programming</p>
+                    </div>
                 </div>
 
                 <!-- Unity Bootcamp Certificate -->
                 <div class="certificate-card">
-                    <img src="images/unity.jpg" alt="Unity Bootcamp Certificate">
-                    <h3>Unity Basics Bootcamp</h3>
-                    <p>Attended a workshop on Unity game engine, focusing on AR, VR, and MR technologies. Received a certificate for completing the "Unity Basics Bootcamp: A Dive into AR, VR, and MR."</p>
+                    <div class="certificate-img-container">
+                        <!-- Replace with your actual certificate image or placeholder -->
+                        <img src="images/certificate-unity.jpg" alt="Unity Bootcamp Certificate"
+                             onerror="this.src='https://via.placeholder.com/400x300/7209b7/ffffff?text=Unity+Bootcamp'">
+                    </div>
+                    <div class="certificate-card-content">
+                        <h3>Unity Basics Bootcamp</h3>
+                        <p class="cert-date"><i class="far fa-calendar-alt"></i> January 2023</p>
+                        <p>Attended a workshop on Unity game engine, focusing on AR, VR, and MR technologies. Received a certificate for completing the "Unity Basics Bootcamp: A Dive into AR, VR, and MR."</p>
+                        <p class="cert-skills"><strong>Skills Developed:</strong> Game Development, Unity Engine, AR/VR Concepts, 3D Modeling Basics</p>
+                    </div>
                 </div>
+
+                <!-- Add more certificates as needed -->
+                <div class="certificate-card">
+                    <div class="certificate-img-container">
+                        <!-- Placeholder for additional certificate -->
+                        <img src="https://via.placeholder.com/400x300/0f0f1a/ffffff?text=Certificate+Placeholder" 
+                             alt="Additional Certificate">
+                    </div>
+                    <div class="certificate-card-content">
+                        <h3>Academic Achievement Award</h3>
+                        <p class="cert-date"><i class="far fa-calendar-alt"></i> Ongoing</p>
+                        <p>Dean's List recognition for academic excellence in Computer Science program at FAST NUCES.</p>
+                        <p class="cert-skills"><strong>Recognition:</strong> Academic Excellence, Consistent Performance</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Note about certificates -->
+            <div class="certificate-note">
+                <p><i class="fas fa-info-circle"></i> <strong>Note:</strong> Physical certificates are available upon request. Digital copies can be provided for verification purposes.</p>
             </div>
         </div>
     </section>
@@ -50,7 +101,12 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Muhammad Hamza. All rights reserved.</p>
+            <p>&copy; 2024 Muhammad Hamza. All rights reserved. | 
+               <a href="index.html">Home</a> | 
+               <a href="projects.html">Projects</a> | 
+               <a href="design.html">Design</a> | 
+               <a href="certificates.html">Certificates</a>
+            </p>
         </div>
     </footer>
 </body>
